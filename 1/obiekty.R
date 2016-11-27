@@ -359,16 +359,26 @@ my_matrix <- matrix(1:9, ncol = 3)
 my_df <- mtcars[1:10,]
 
 # Construct list with these different elements (and add names!):
-my_list <- 
+my_list <- list(mtcars=mtcars,
+                my_vector=my_vector,
+                my_matrix=my_matrix,
+                my_df=my_df)
 
 # create list that would contain iris dataset, a character vector of legth 5 and matrix 3x3 (values are not important)
 # name them 'iris', 'character', 'matrix' (these should be the names of list)
 
-# print out vector named "character"
+ch = c('a', 'b', 'c', 'd', 'e')
+m = matrix(1:9, nrow=3, ncol=3)
 
+my_list = list(iris=iris,
+               character=ch,
+               matrix=m)
+
+# print out vector named "character"
+my_list$character
   
 # print the second element of this vector
-  
+my_list$character[2]
 
 # add to the list vector of 3 character values
 
